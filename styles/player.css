@@ -1,0 +1,66 @@
+.player-idle {
+  background-image: url("../assets/player/Idle.png");
+  animation-name: animate-player-idle;
+  animation-timing-function: steps(4);
+  animation-iteration-count: infinite;
+}
+
+.player-attack {
+  background-image: url("../assets/player/Attack.png");
+  animation-timing-function: steps(5);
+  animation-duration: 0.8s;
+  animation-name: animate-player-attack;
+  animation-iteration-count: 1;
+}
+
+.player-hurt {
+  background-image: url("../assets/player/Hurt.png");
+  animation-timing-function: steps(2);
+  animation-name: animate-player-hurt;
+  background-size: auto 100%;
+  animation-iteration-count: 1;
+}
+
+.player-dead {
+  background-image: url("../assets/player/Dead.png");
+  animation-timing-function: steps(6);
+  animation-name: animate-player-dead;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate-player-idle {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -312px 0;
+  }
+}
+
+@keyframes animate-player-attack {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -480px 0;
+  }
+}
+
+@keyframes animate-player-hurt {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -140px 0;
+  }
+}
+
+@keyframes animate-player-dead {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -550px 0;
+  }
+}

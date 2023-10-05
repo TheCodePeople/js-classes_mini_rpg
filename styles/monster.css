@@ -1,0 +1,86 @@
+.monster-idle {
+  cursor: pointer;
+  background-image: url("../assets/orc/Idle.png");
+  animation-name: animate-monster-idle;
+  animation-timing-function: steps(5);
+  animation-iteration-count: infinite;
+}
+
+.monster-attack {
+  cursor: pointer;
+  background-image: url("../assets/orc/Attack.png");
+  animation-timing-function: steps(4);
+  animation-duration: 1s;
+  animation-name: animate-monster-attack;
+  animation-iteration-count: 1;
+}
+
+.monster-special-attack {
+  cursor: pointer;
+  background-image: url("../assets/orc/Run+Attack.png");
+  animation-timing-function: steps(5);
+  animation-duration: 0.8s;
+  animation-name: animate-monster-special-attack;
+  animation-iteration-count: 1;
+}
+
+.monster-hurt {
+  background-image: url("../assets/orc/Hurt.png");
+  animation-timing-function: steps(2);
+  animation-duration: 1s;
+  animation-name: animate-monster-hurt;
+  animation-iteration-count: 1;
+}
+
+.monster-dead {
+  background-image: url("../assets/orc/Dead.png");
+  animation-timing-function: steps(4);
+  animation-name: animate-monster-dead;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate-monster-idle {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -500px 0;
+  }
+}
+
+@keyframes animate-monster-attack {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -400px 0;
+  }
+}
+
+@keyframes animate-monster-special-attack {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -500px 0;
+  }
+}
+
+@keyframes animate-monster-hurt {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -600px 0;
+  }
+}
+
+@keyframes animate-monster-dead {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -384px 0;
+  }
+}

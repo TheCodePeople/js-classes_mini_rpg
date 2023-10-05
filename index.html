@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/player.css" />
+    <link rel="stylesheet" href="./styles/monster.css" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>Mini RPG</title>
+  </head>
+  <body>
+    <div class="game-container">
+      <h1 class="title">Mini RPG</h1>
+      <button class="start-button bordered">Start</button>
+
+      <div class="scene">
+        <div class="sprite-container" id="player">
+          <div class="sprite player-idle"></div>
+          <div class="health-bar">
+            <div class="health"></div>
+            <span class="character-name bordered"></span>
+          </div>
+        </div>
+
+        <div class="sprite-container" id="orc">
+          <div class="sprite monster-idle"></div>
+          <div class="health-bar">
+            <div class="health"></div>
+            <span class="character-name bordered"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="./js/index.js" type="module"></script>
+</html>
